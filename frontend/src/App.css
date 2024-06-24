@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+@tailwind base;
+
+
+p {
+  @apply leading-[1.6];
+}
+
+body{
+  background-color: rgba(0, 0, 0,0.8);
+}
+.h1title{
+  font-family: "Kranky", serif;
+}
+.h1title:hover{
+  transform: scale(1.05);
+}
+.discnav{
+  animation: rotation 20s linear infinite;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.disc{
+  animation: rotation 20s linear infinite;
+}
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(359deg);
+  }
+}
+.artist-card{
+  transition: all 0.4s ease-in-out;
+  background-color: rgba(0, 0, 0,0.6);
+  border-radius: 30px;
+  width: 224px;
+}
+.song-card{
+  transition: all 0.4s ease-in-out;
+  background-color: rgba(0, 0, 0,0.6);
+  border-radius: 30px;
+}
+.song-card:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 20px 20px 0px black;
+  cursor: pointer;
+  
+}
+.artist-card:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 20px 20px 0px black;
+  cursor: pointer;
+  height: 370px;
+  
+}
+.artist-description {
+  transition: opacity 0.3s ease; 
+}
+
+.artist-card:hover .artist-description {
+  opacity: 1; 
+}
+.logo{
+  transition: all 0.3s ease-in-out;
+}
+.song-card:hover .logo{
+  opacity: 1;
+}
+@media screen and (max-width:800px) {
+  .card-image{
+    height: 200px;
+  }
+  .all-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .artist-card{
+    width: 70%;
+    margin-left: 15%;
+    height: 30%;
+    margin-bottom: 10%;
+    
+  }
+  .song-card{
+    width: 70%;
+    margin-left: 15%;
+    height: 60%;
+    margin-bottom: 10%;
+  }
+  .your-playlist{
+    height: 2300px;
+  }
+  .your-artist{
+    height: 2700px;
+  }
+  .opensidebar{
+    margin-right: 0px;
+  }
+  
+}
+@media screen and (min-width:800px) {
+  .your-artist{
+    height: 450px;
+  }
+  .opensidebar{
+    margin-right: 12px;
+  }
+}
+.sidebarMain{
+  background-color: black;
+}
+.right-side {
+  transition: all 0.5s ease-in-out;
+}
+.sidebar{
+  transition: all 0.5s ease-in-out;
+}
+
+
